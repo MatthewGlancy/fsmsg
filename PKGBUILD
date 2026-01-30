@@ -1,7 +1,7 @@
 # Maintainer: Matty Glancy <ukmatty73 (at) gmail (com)>
 
 pkgname=fsmsg-git
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="Leave messages to other users on the system"
 arch=('any')
