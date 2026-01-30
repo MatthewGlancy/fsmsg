@@ -1,0 +1,12 @@
+pkgbase = fsmsg-git
+	pkgdesc = Leave messages to other users on the system
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/MatthewGlancy/fsmsg.git
+	arch = any
+	license = 0BSD
+	makedepends = git
+	source = fsmsg-git::git+https://github.com/MatthewGlancy/fsmsg.git
+	md5sums = SKIP
+
+pkgname = fsmsg-git
