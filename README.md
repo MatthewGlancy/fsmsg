@@ -10,17 +10,34 @@ fsmsg clear                       - Clear all messages in your inbox.
 fsmsg help                        - Display this help message.
 ```
 
-## Setup
+## Installation
+
+### From AUR
+
+#### With yay
 ```shell
-# Setup the executable
+yay -S fsmsg-git
+```
+
+#### Manually from AUR
+https://aur.archlinux.org/packages/fsmsg-git
+
+### Manual Installation
+Download the fsmsg executable from this repository
+
+```shell
+# Copy the executable somewhere all users can execute
 sudo mv fsmsg /usr/bin/fsmsg
-sudo chmod 777 /usr/bin/fsmsg
 
-# Inbox directory
-sudo mkdir -p /var/fsmsg
-sudo chmod 777 /var/fsmsg
+# Setting up the inbox directory
+sudo mkdir -p /var/spool/fsmsg
+sudo chmod 0777 /var/spool/fsmsg
+```
 
-# Check inbox on login for all users
+## Post Installation
+It's useful for everyone to check their messages on a regular basis  
+In order to do this, a new profile.d entry is a nice option
+```shell
 sudo echo "fsmsg check" > /etc/profile.d/fsmsg.sh
 sudo chmod +x /etc/profile.d/fsmsg.sh
 ```
