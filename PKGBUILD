@@ -13,7 +13,6 @@ md5sums=('SKIP')
 
 package() {
     cd "$pkgname"
-    echo $pkgdir
     install -Dm755 ./fsmsg "$pkgdir/usr/bin/fsmsg"
     install -Dm644 ./README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
     install -Dm644 ./LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
